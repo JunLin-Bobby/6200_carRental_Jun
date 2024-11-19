@@ -1,8 +1,9 @@
 package VehicleSpecific;
 
 import CarRentalSystem.Vehicle;
+import CarRentalSystem.VehicleFactory;
 
-public class HondaCRVFactory {
+public class HondaCRVFactory implements VehicleFactory {
 
     // Factory method to produce only HONDACRV
     public Vehicle getObject() {

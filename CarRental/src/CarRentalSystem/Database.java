@@ -1,14 +1,24 @@
 package CarRentalSystem;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Database {
-    private List<Customer> customers;
-    private List<Vehicle> vehicles;
-    private List<Reservation> reservations;
-    private List<Payment> payments;
-    private List<Maintenance> maintenanceRecords;
+public  class Database {
+    private ArrayList<Customer> customers;
+    private ArrayList<Vehicle> vehicles;
+    private ArrayList<Reservation> reservations;
+    private ArrayList<Payment> payments;
+
+    public Database( ) {
+        this.customers = new ArrayList<>();
+        this.vehicles =  new ArrayList<>();
+        this.reservations =  new ArrayList<>();
+        this.payments =  new ArrayList<>();
+        this.maintenanceRecords = new ArrayList<>();
+    }
+
+    private ArrayList<Maintenance> maintenanceRecords;
 
     public void addCustomer(Customer customer) {
         // Implementation for adding a customer
@@ -16,6 +26,7 @@ public class Database {
 
     public void addVehicle(Vehicle vehicle) {
         // Implementation for adding a vehicle
+        vehicles.add(vehicle);
     }
 
     public void addReservation(Reservation reservation) {
@@ -31,9 +42,12 @@ public class Database {
         return false;
     }
 
-    public List<Vehicle> searchVehicle(String type, Date date) {
+    public ArrayList<Vehicle> searchVehicle(String type, Date date) {
         // Implementation for searching vehicles
         return null;
+    }
+    public ArrayList<Vehicle> getVehicles() {
+        return vehicles;
     }
 
 }

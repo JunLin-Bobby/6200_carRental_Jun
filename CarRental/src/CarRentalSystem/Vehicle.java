@@ -1,6 +1,6 @@
 package CarRentalSystem;
 
-public class Vehicle {
+public abstract class Vehicle {
     protected int vehicleID;
     protected String model;
     protected String brand;

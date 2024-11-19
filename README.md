@@ -1,0 +1,1 @@
+I have created the basic Plain Old Java Objects based on the UML diagram we submitted last week. Additionally, following the midterm airport model, I have implemented two vehicle factories (Honda CRV and Toyota Corolla). In the DemoCreateVehicle code, there is a demonstration of how to manufacture vehicles and add them to the database.

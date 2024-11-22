@@ -21,7 +21,7 @@ public  class Database {
     private ArrayList<Maintenance> maintenanceRecords;
 
     public void addCustomer(Customer customer) {
-        // Implementation for adding a customer
+        this.customers.add(customer);
     }
 
     public void addVehicle(Vehicle vehicle) {
@@ -49,5 +49,11 @@ public  class Database {
     public ArrayList<Vehicle> getVehicles() {
         return vehicles;
     }
+    // Method to add a customer to the list
 
+
+    // Getter for the customers list
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
 }
